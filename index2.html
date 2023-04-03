@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find a Farmer</title>
+	<!-- Add CSS styles here -->
+	<style>
+		nav {
+			background-color: #5DAFDC;
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			margin-right: 20px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.login-form {
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 50px auto;
+			width: 400px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+
+		.login-form h2 {
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.login-form label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		.login-form input[type="text"],
+		.login-form input[type="password"] {
+			padding: 10px;
+			width: 100%;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+
+		.login-form input[type="submit"] {
+			background-color: #5DAFDC;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			width: 100%;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.login-form input[type="submit"]:hover {
+			background-color: #4895bb;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Register</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+	</nav>
+
+	<div class="login-form">
+		<h2>Login</h2>
+		<form>
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email">
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
