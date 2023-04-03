@@ -1,0 +1,17 @@
+{
+    "products" : [
+        {"productid": "1",
+        "productname": "",
+        "Firstname": "",
+        "Secondname": "",
+        "productimage": "",
+        "productlocation": "",
+        "farmerContactnumber": "",
+        "itemstock":"",
+        "itemprice":"",
+        "wholesaleprice": ""
+    }
+    
+        
+    ]
+}
