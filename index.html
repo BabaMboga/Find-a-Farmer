@@ -7,8 +7,9 @@
     <title>Find A FARMER</title>
 </head>
 <body>
-    <!-- MY NAVIGATION BAR -->
+    <!-- LANDING PAGE -->
     <div class="home">
+        <!-- MY NAVIGATION BAR -->
         <section class="navigator">
             <div id="header">
                 <a href="index.html">FIND A FARMER</a>
@@ -25,7 +26,43 @@
                 </ul>
     
             </nav>
+
         </section>
+
+         <!-- LOGIN FORM -->
+        <div id='login-form' class='login-page'>
+            <!-- creating the form box -->
+            <div class="form-box">
+                <div id="btn">
+                    <button type='button' onclick='login()' class='toggle-btn'>LOG IN</button>
+                    <button type='button' onclick='register()' class='toggle-btn'> REGISTER</button>
+                </div>
+                <!-- creating the log in form -->
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Rememer Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <!-- creating the registration form -->
+                <form id='registered' class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <label for="account-type">Choose your account type:</label>
+                        <select id="account-type" name="account-type">
+                                <option value="Whole-sale Customer">Whole-Sale Customer</option>
+                                <option value="Retail Customer">Retail Customer</option>
+                                <option value="Farmer">Farmer</option>                                
+                        </select>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type='checkbox' class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="'submit-btn">REGISTER</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
 
@@ -69,27 +106,8 @@
 
 
     <!-- CONTACTS -->
-
-
-    <!-- LOGIN PAGE -->
-
-    <section class="loginForm">
-        <img >
-        
-      <div class="contains">
-         <h1>PlEASE JOIN<span>FIND A FARMER</span></h1>
-         <p>Experience the serenity of nature</p>
-         <form id="loginForm"action="">
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" placeholder="Enter email" required><br>
-            <label for="account type">Account Type</label><br>
-            <input type="account type" name="account type" id="accounType" placeholder="Select Account" required>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter password" required>
-            <p id="forgotPassword">Forgot Password ?</p>
-            <button type="submit">Log In</button>
-         </form>
-      </div>
+    <section class="contacts">
+       
       
     </section>
 

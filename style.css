@@ -35,3 +35,38 @@ nav ul li{
     margin-right: 70px;
     /* this blocks are for styling the list elements */
 }
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    font-family: sans-serif;
+}
+nav ul li button{
+    font-size: 20px;
+    color:white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover{
+    color:aqua;
+}nav ul li a:hover{
+    color: aqua;
+}
+a{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+#login-form{
+    display: none;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position:relative;
+    margin:2% auto;
+    background:rgba(0,0,0,0.3);
+}
