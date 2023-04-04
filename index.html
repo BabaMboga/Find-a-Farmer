@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find A FARMER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- LANDING PAGE -->
@@ -17,7 +18,7 @@
             <nav>
                 <img>
                 <ul id="MenuItems">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">GOODS</a></li>
                     <li><a href="#">BLOG</a></li>
@@ -33,19 +34,32 @@
         <div id='login-form' class='login-page'>
             <!-- creating the form box -->
             <div class="form-box">
-                <div id="btn">
-                    <button type='button' onclick='login()' class='toggle-btn'>LOG IN</button>
-                    <button type='button' onclick='register()' class='toggle-btn'> REGISTER</button>
+                <div class="button-box">
+                    <div id="btn">
+                         <button type='button' onclick='login()' class='toggle-btn'>LOG IN</button>
+                         <button type='button' onclick='register()' class='toggle-btn'> REGISTER</button>
+                    </div>
                 </div>
                 <!-- creating the log in form -->
-                <form id='login' class='input-group-login'>
+                <form id='login-form-content' class='input-group-login'>
                     <input type='text' class='input-field' placeholder='Email Id' required>
                     <input type='password' class='input-field' placeholder='Enter Password' required>
                     <input type='checkbox' class='check-box'><span>Rememer Password</span>
                     <button type='submit' class='submit-btn'>Log in</button>
                 </form>
-                <!-- creating the registration form -->
-                <form id='registered' class="input-group-register">
+            </div>
+        </div>
+        <div id="regiser-form" class="login-page">
+                   <!-- creating the form box -->
+             <div class="form-box">
+                <div class="button-box">
+                        <div id="btn">
+                            <button type='button' onclick='login()' class='toggle-btn'>LOG IN</button>
+                            <button type='button' onclick='register()' class='toggle-btn'> REGISTER</button>
+                        </div>
+                </div>
+        <!-- creating the registration form -->
+                <form id='register-form-content' class="input-group-register">
                     <input type="text" class="input-field" placeholder="First Name" required>
                     <input type="text" class="input-field" placeholder="Last Name" required>
                     <input type="email" class="input-field" placeholder="Email Id" required>
@@ -112,6 +126,30 @@
     </section>
 
     
-<script></script>  
+<!-- <script>
+    var x = document.getElementById('login-form-content');
+    var y = document.getElementById('register-form-content ');
+    var z = document.getElementById('btn');
+    function register()
+    {
+        x.style.left = '-400px';
+        y.style.left= ' 50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>  
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(even){
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+</script> -->
 </body>
 </html>

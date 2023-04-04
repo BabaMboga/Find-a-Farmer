@@ -12,15 +12,15 @@
         "wholesaleprice": "400"
     },
     {"productid": "2",
-        "productname": "Potatoes",
-        "Firstname": "Naman",
-        "Secondname": "Balalu",
+        "productname": "Chicken",
+        "Firstname": "Marion",
+        "Secondname": "Ndambuki",
         "productimage": "",
-        "productlocation": "kiserian",
-        "farmerContactnumber": "0734123542",
-        "itemstock":"689",
-        "itemprice":"5",
-        "wholesaleprice": "400"
+        "productlocation": "Nakuru",
+        "farmerContactnumber": "0798475524",
+        "itemstock":"1400",
+        "itemprice":"800",
+        "wholesaleprice": "600"
     },
     {"productid": "3",
         "productname": "Potatoes",
