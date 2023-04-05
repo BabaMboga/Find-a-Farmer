@@ -4,18 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FIND A FARMER</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="home">
+         <!-- MY NAVIGATION BAR -->
+         <section class="navigator">
+            <div id="header">
+                <a href="index.html"><img src=""></a>
+            </div>
+            <nav>
+                <img>
+                <ul id="MenuItems">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#">GOODS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login').style.display='block'" style="width:auto;">LOGIN</button></li>
+                </ul>
+    
+            </nav>
+        </section>
+
         <div class="form-box">
             <div class="button-box">
-
+                <div id="btn"></div>
+                <button id="login-btn" type = "button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type = "button" class="toggle-btn" onclick="register()">Register</button>
+                
             </div>
-
+            <div class="social-icons">
+                <img src="google-logo.png">
+                <img src="facebook-new.png">
+                <img src="twitter.png">
+            </div>
+            <div>
+                <form id="login" class='input-group'>
+                    <input type='text' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Rememer Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+            </div>
+            <div><form id='register' class="input-group" type="text" class="input-field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <!-- <label for="account-type">Choose your account type:</label>
+                    <select id="account-type" name="account-type">
+                            <option value="Whole-sale Customer">Whole-Sale Customer</option>
+                            <option value="Retail Customer">Retail Customer</option>
+                            <option value="Farmer">Farmer</option>                                
+                    </select> -->
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type='checkbox' class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form></div>
+            
         </div>
     </div>
+
+    <section id="about">
+        <div class="info">
+            <i class="fa fa-home" style="font-size:40px"></i>
+            <h2>We are organic</h2>
+            <p>We strive in ensuring our farmers are well adversed in the production of organic foods by ensuring they are up to date on the latest techniques and weather patterns. We ensure what you eat is safe for your body. </p>
+
+        </div>
+        <div class="info">
+            <i class="fa fa-hotel" style="font-size:40px"></i>
+            <h2>We are trustworthy</h2>
+            <p>All our farmers are vetted through a rigorous process to ensure they fit the criteria to join and enjoy our services. The customers are also thoroughly vetted to ensure that our farmers get what they are owed and in due time.</p>
+
+        </div>
+        <div class="info">
+            <i class="fa fa-briefcase" style="font-size:40px"></i>
+            <h2>We are you</h2>
+            <p>We here at find a farmer ensure that our clients needs are always met ensuring high quality in all our services. We also pride ourselves on a high satisfaction rate all over the world</p>
+        </div>
+
+    </section>
+
     
+    <script>
+       
+    const x = document.getElementById('login');
+    const y = document.getElementById('register');
+    const z = document.getElementById('btn');
+
+    const loginbtn = document.getElementById('login-btn');
+    function register()
+    {
+        x.style.left = '-400px';
+        y.style.left= ' 50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+        
+    }
+
     
+</script>  
 </body>
 </html>

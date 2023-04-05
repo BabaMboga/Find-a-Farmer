@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet" href="style1.css">
+    <title>Titan-Real-Estate</title>
+</head>
+
+<body>
+    <section class="hero">
+        <nav>
+            <img src="./assets/images/Group 3 (1).svg" alt="" srcset="" width="200">
+            <ul class="active">
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#property-exploration">Properties</a> </li>
+                <li id="login"> <a href="#">Login</a> </li>
+            </ul>
+            <i class="fa fa-bars" ></i>
+        </nav>
+
+        <div class="container" id="home">
+            <div class="overlay">
+                <div id="about">
+                    <h2>FIND YOUR DREAM PROPERTY</h2>
+                    <p>Home is where dreams are made. Join us and let us help your make you dreams come true
+                    </p>
+                    <button class="btn-explore">Explore</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MORE INFORMATION -->
+    <section class="more">
+        <div class="info">
+            <i class="fa fa-home" style="font-size:40px"></i>
+            <h2>Find a home</h2>
+            <p>Your family needs a new home. Our
+                family has exactly that. Every house has a story. Let us tell yoursbuy home from us – get the best deal.
+            </p>
+        </div>
+        <div class="info">
+            <i class='fa fa-hotel' style="font-size:40px"></i>
+            <h2>Find a vacational home</h2>
+            <p>Advanced hotel homes at affordable price. We are offering you the best deal and Luxury couldn’t come
+                cheaper than this
+            </p>
+        </div>
+        <div class="info">
+            <i class="fa fa-briefcase" style="font-size:40px"></i>
+            <h2>Private rooms for work</h2>
+            <p>Get to do work in the best serene enviroments with an amaizing neighbourhood and with unlimited internet connection</p>
+        </div>
+
+    </section>
+
+
+    <!-- PROPERTY SECTION -->
+    <section class="property" id="property-exploration">
+        <h1 id="exper">GET THE TYPE OF PROPERTY YOU DESIRE</h1>
+        <div class="filter-prop">
+            <div class="left-prop">
+                <button id="homes">Homes</button>
+                <button id="vacation">Vacation Homes</button>
+                <button id="rental">Rental Units</button>
+                <button id="bungalow">Bungalows</button>
+                <button id="apartment">Apartments</button>
+            </div>
+            <div class="right-prop">
+                <button id="filter"><i class="fa fa-filter" style="font-size:18px"></i></button>
+                <button id="other">Other</button>
+            </div>
+        </div>
+
+        <div class="propCards">
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <h1>WE PROVIDE THE BEST EXPERIENCE</h1>
+        <div class="aboutSec">
+            <div class="image">
+                <img src="https://media.vrbo.com/lodging/31000000/30480000/30479300/30479211/88ef935d.c10.jpg" alt=""
+                    width="300">
+            </div>
+            <div class="aboutCont">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex aliquid odio praesentium pariatur
+                    voluptatem nihil, accusantium placeat eum non reprehenderit sunt laudantium voluptas eligendi.
+                    Voluptates modi aliquid voluptatem molestiae.</p>
+                <div class="flex-items">
+                    <div class="flex flex-1">
+                        <h4>Awards</h4>
+                        <p>25+</p>
+                    </div>
+                    <div class="flex flex-2">
+                        <h4>Experience</h4>
+                        <p>12+ Years</p>
+                    </div>
+                    <div class="flex flex-3">
+                        <h4>House Sold</h4>
+                        <p>200+</p>
+                    </div>
+                </div>
+                <button id="moreInf">See More </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMENT SECTION -->
+    <section class="comment">
+        <h2>Let Us know How You Feel</h2>
+        <div class="comment-area">
+            <form  id="comments" action="">
+                <textarea name="comments" id="" cols="80" rows="10" placeholder="Leave a comment..."></textarea><br>
+                <button id="submit" type="submit">Submit Response</button>
+            </form>
+            <ul id="response">
+            
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- LOG IN PAGE -->
+    <section class="login-page">
+        <img src="./assets/images/Group 3 (1).svg" alt="" srcset="" width="150">
+        <i class="fa fa-times" id="close-btn"></i>
+      <div class="contains">
+         <h1>Welcome to <span>Titan Real Estate</span></h1>
+         <p>Experience the serenity of nature</p>
+         <form id="login-page"action="">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter email" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <p id="forgot">Forgot Password ?</p>
+            <button type="submit">Log in</button>
+         </form>
+      </div>
+      
+    </section>
+    <div class="form-overlay"></div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
