@@ -248,7 +248,7 @@ ul {
 .menu-icon {
     width: 28px;
     margin-left: 20px;
-    display: none;
+    display: block;
 }
 
 @media only screen and (max-width: 800px) {
@@ -474,6 +474,10 @@ form a {
     margin-top: 8px;
     transform: translateX(100px);
     transition: transform 1s;
+}
+.social-icons{
+    margin:30px auto;
+    text-align: center;
 }
 
 
