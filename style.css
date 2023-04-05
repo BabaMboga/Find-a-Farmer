@@ -6,6 +6,32 @@
 .icon {
     font-size: 100px;
 }
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #ccc;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card h3 {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .card p {
+    margin: 10px;
+    text-align: justify;
+  }
 body{
     font-family: 'Poppins', sans-serif;
 }
