@@ -21,6 +21,9 @@
   
   .card img {
     width: 100%;
+    height: 180px;
+    margin-top:15px;
+    border-radius: 10px 10px 0px 0px;
   }
   
   .card h3 {
@@ -490,6 +493,38 @@ form .btn:focus {
 }
 form a {
     font-size: 12px;
+}
+.navbar .login-container{
+    float:right;
+}
+.navbar input[type=email]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size:17px;
+    border:none;
+    width:150px;
+}
+.navbar input[type=password]{
+    padding:6px ;
+    margin-top:8px;
+    font-size:17px;
+    border:none;
+    width:150px;
+}
+.navbar .login-container button{
+    float:right;
+    padding:6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background:  #ff523b;
+    font-size:17px;
+    border:none;
+    cursor:pointer;
+    border-radius: 30px;
+}
+
+.navbar .login-container button:hover {
+    background: #ccc;
 }
 
 #indicator {

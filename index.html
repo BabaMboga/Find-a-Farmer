@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIND A FARMER</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
@@ -15,24 +15,24 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="logo-1011.jpg" width="160px"></a>
+                    <!-- <a href="index.html"><img src="logo-1011.jpg" width="160px"></a> -->
                     </div>
-                    <!-- <div class = "login-container">
-                        <form action = "action_page.php">
+                    <div class = "login-container">
+                        <form>
                             <input type="email" placeholder="Email" name="Email" required>
                             <input type="password" placeholder="Password" name="psw" required>
                             <button type="submit">Login</button>
                         </form>
-                    </div> -->
+                    </div>
                     <nav>                                              
                         <ul id="menuItems">                            
                             <li><a href="#products">Products</a></li>
-			                <li><a href="contact_us">Contact Us</a></li>
-                            <li><a href="about">About Us</a></li>
+			                <li><a href="#contact_us">Contact Us</a></li>
+                            <li><a href="#about_us">About Us</a></li>
                         </ul>
                     </nav>
-                    <a href=""><img src="shopping-cart.png" width="30px" height="30px"></a>
-                    <img src="menu-rounded.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+                    <a href=""><img src="/assets/images/shopping-cart.png" width="30px" height="30px"></a>
+                    <img src="/assets/images/menu-rounded.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
                 </div>
                 <div class="row">
                     <div class="col-2">
@@ -43,7 +43,7 @@
                             <a href="#products" class="btn">Explore Now &#8594;</a>
                     </div>
                     <div class="col-2">
-                        <img src="images/image1.png">
+                        <img src="/assets/images/happy-farmer-front-cover.png">
                     </div>
                 </div>
             </div>
@@ -56,15 +56,15 @@
                 <div class="row">
                     <div class="col-3">
                         <h4>PLANTS & CEREEALS</h4>
-                        <img src="category-01.jpg">
+                        <img src="/assets/images/category-01.jpg">
                     </div>
                     <div class="col-3">
                         <h4>ANIMALS & ANIMAL PRODCUTS</h4>
-                        <img src="category-2.jpg">
+                        <img src="/assets/images/category-2.jpg">
                     </div>
                     <div class="col-3">
                         <h4>AGRICULTURAL INFORMATION & TIPS</h4>
-                        <img src="category-3.jpg">
+                        <img src="/assets/images/category-3.jpg">
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="small-container">
                 <div class="row">
                     <div class="col-2">
-                        <img src="insurance.jpg" class="offer-img">
+                        <img src="/assets/images/insurance.jpg" class="offer-img">
                     </div>
                     <div class="col-2">
                         <p>Exclusively available on Find a Farmer</p>
@@ -100,7 +100,7 @@
             </div>
         </div>
         <!----------About us---------->
-        <div class="about_us">
+        <div id="about_us">
             <div class="small-container">
                 <div class="row">
                     <div class="col-5">
@@ -122,7 +122,7 @@
             </div>
          </div>
     <!--------------------footer----------------------->                            
-      
+      <div id="contact_us">
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -130,12 +130,12 @@
                         <h3>App coming soon...</h3>
                         <p>Android and Iphone app coming soon</p>
                         <div class="app-logo">
-                            <img src="hand-with-smartphone.png">
+                            <img src="/assets/images/hand-with-smartphone.png">
                             
                         </div>
                     </div>
                     <div class="footer-col-2">
-                        <img src="logo.png">
+                        <img src="/assets/images/logo.png">
                         <p>Get notifications when we launch new products</p>
                     </div>
                     <div class="footer-col-3">
@@ -150,15 +150,19 @@
                     <div class="footer-col-4">
                         <h3>Follow us on our socials</h3>
                             <div>
-                            <img src="google-logo.png">
-                            <img src="youtube-play.png" >
-                            <img src="instagram-new.png" >
-                            <img src="facebook-new.png" >
+                            <img src="/assets/images/google-logo.png">
+                            <img src="/assets/images/youtube-play.png" >
+                            <img src="/assets/images/instagram-new.png" >
+                            <img src="/assets/images/facebook-new.png" >
                             </div>
                     </div>
                 </div>
                 <hr>
                 <p class="copyright">Copyright 2023 - Powered by BabaMboga</p>
+            </div>
+        </div>
+        </div>
+        
 
 <!---------------js for menu toggle--------------->
 
@@ -179,6 +183,6 @@
     }
 </script>
 <script src="https://kit.fontawesome.com/21d24d62ff.js" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="/assets/js/index.js"></script>
 </body>
 </html>
