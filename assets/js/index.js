@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  document.getElementById('loginForm').reset();
     const galleryContainer = document.querySelector('.card-container');
   
     // Make a request to the API

@@ -567,6 +567,20 @@ form a {
     .cart-info p {
         display: none;
     }
+    .navbar .login-container{
+        float:none;
+    }
+    .navbar input[type=email],.navbar input[type=password],.navbar .login-container button{
+        float:none;
+        display:block;
+        text-align: left;
+        width: 100%;
+        margin:0;
+        padding:14px;
+    }
+    .navbar input[type=email],.navbar input[type=password]{
+        border: 1px solid #ccc;
+    }
 }
 
 
