@@ -6,10 +6,10 @@
       "Firstname": "Naman",
       "Secondname": "Balalu",
       "productimage": "https://i.pinimg.com/564x/78/51/a5/7851a5c6287c344c834cc76b0c7a913b.jpg",
-      "productlocation": "kiserian",
+      "productlocation": "Kiserian",
       "farmerContactnumber": "0734123542",
       "itemstock": "689",
-      "itemprice": "5",
+      "itemprice": "10",
       "wholesaleprice": "400"
     },
     {
@@ -20,33 +20,33 @@
       "productimage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5195342a-4668-498c-9166-fb66fee6ff17/d2d3526-aff4b7e4-b716-4089-a80a-f53cafc94d32.jpg/v1/fit/w_750,h_562,q_70,strp/chicken_by_lizziy_d2d3526-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNTE5NTM0MmEtNDY2OC00OThjLTkxNjYtZmI2NmZlZTZmZjE3XC9kMmQzNTI2LWFmZjRiN2U0LWI3MTYtNDA4OS1hODBhLWY1M2NhZmM5NGQzMi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.WmKfhfn3gzBa-6TRR4_vt22E1e1RUwPSmU2LLl_7M2Y",
       "productlocation": "Nakuru",
       "farmerContactnumber": "0798475524",
-      "itemstock": "1400",
-      "itemprice": "800",
-      "wholesaleprice": "600"
+      "itemstock": "1300",
+      "itemprice": "300",
+      "wholesaleprice": "150"
     },
     {
       "id": "3",
-      "productname": "sukumawiki",
+      "productname": "Sukumawiki",
       "Firstname": "Patricia",
       "Secondname": "Ngele",
       "productimage": "https://i.pinimg.com/564x/a3/69/62/a369620c0339d29e29357297515cfedb.jpg",
-      "productlocation": "kiambu",
+      "productlocation": "Kiambu",
       "farmerContactnumber": "0765267124",
       "itemstock": "1003",
-      "itemprice": "120",
-      "wholesaleprice": "100"
+      "itemprice": "30",
+      "wholesaleprice": "15"
     },
     {
       "id": "4",
-      "productname": "strawberry",
+      "productname": "Strawberry",
       "Firstname": "Edson",
       "Secondname": "Joshua",
       "productimage": "https://i.pinimg.com/564x/1f/02/6b/1f026be7d7ec72df7e78443058ff7b79.jpg",
       "productlocation": "Kitale",
       "farmerContactnumber": "0783217943",
       "itemstock": "700",
-      "itemprice": "10",
-      "wholesaleprice": "5"
+      "itemprice": "20",
+      "wholesaleprice": "15"
     },
     {
       "id": "5",
@@ -54,7 +54,7 @@
       "Firstname": "Patrick",
       "Secondname": "Lusenya",
       "productimage": "https://i.pinimg.com/564x/23/07/e3/2307e3ca12baffe4af873355b328ec4e.jpg",
-      "productlocation": "ahero",
+      "productlocation": "Ahero",
       "farmerContactnumber": "0725204670",
       "itemstock": "113",
       "itemprice": "8500",
@@ -62,11 +62,11 @@
     },
     {
       "id": "6",
-      "productname": "avocado",
+      "productname": "Avocado",
       "Firstname": "Hazel",
       "Secondname": "Museo",
       "productimage": "https://i.pinimg.com/564x/d3/d1/2f/d3d12f29afc1a90170f1c80bede3bb58.jpg",
-      "productlocation": "kisii",
+      "productlocation": "Kisii",
       "farmerContactnumber": "0745328471",
       "itemstock": "930",
       "itemprice": "30",
@@ -78,7 +78,7 @@
       "Firstname": "Niasy",
       "Secondname": "Moi",
       "productimage": "https://i.pinimg.com/564x/b9/4b/08/b94b089a28cda37aedbb2e5f83ddbea7.jpg",
-      "productlocation": "kajiad0",
+      "productlocation": "Kajiado",
       "farmerContactnumber": "0700876543",
       "itemstock": "387",
       "itemprice": "300",
@@ -86,11 +86,11 @@
     },
     {
       "id": "8",
-      "productname": "tomatoes",
+      "productname": "Tomatoes",
       "Firstname": "Reagan",
       "Secondname": "Lionz",
       "productimage": "https://i.pinimg.com/564x/17/a2/de/17a2de80b768ca63bd33edce0d6d789a.jpg",
-      "productlocation": "athi-river",
+      "productlocation": "Athi-river",
       "farmerContactnumber": "0780032143",
       "itemstock": "10000",
       "itemprice": "10",
@@ -98,7 +98,7 @@
     },
     {
       "id": "9",
-      "productname": "onions",
+      "productname": "Onions",
       "Firstname": "Purity",
       "Secondname": "Musa",
       "productimage": "https://i.pinimg.com/564x/8e/4f/32/8e4f329704155832cea0f8ccd5213aeb.jpg",
@@ -110,7 +110,7 @@
     },
     {
       "id": "10",
-      "productname": "goats",
+      "productname": "Goats",
       "Firstname": "Arthur",
       "Secondname": "Avery",
       "productimage": "https://i.pinimg.com/564x/3f/53/69/3f536959982512397001f554167e3243.jpg",
@@ -194,7 +194,7 @@
     },
     {
       "id": "17",
-      "productname": "apples",
+      "productname": "Apples",
       "Firstname": "Philemon",
       "Secondname": "Kusenya",
       "productimage": "https://i.pinimg.com/564x/91/33/cc/9133cc74242a28e6812cb8eec86e176a.jpg",
@@ -210,7 +210,7 @@
       "Firstname": "Bruce",
       "Secondname": "Wayne",
       "productimage": "https://i.pinimg.com/564x/78/b3/07/78b3070b2394a9aab0659463f7de1141.jpg",
-      "productlocation": "kiserian",
+      "productlocation": "Kiserian",
       "farmerContactnumber": "0700897653",
       "itemstock": "662",
       "itemprice": "30",
@@ -236,7 +236,7 @@
       "productimage": "https://i.pinimg.com/564x/58/3f/22/583f22317f1bd6c42808c663ab660a75.jpg",
       "productlocation": "Kilimani",
       "farmerContactnumber": "0732783254",
-      "itemstock": "699",
+      "itemstock": "599",
       "itemprice": "15",
       "wholesaleprice": "8"
     }

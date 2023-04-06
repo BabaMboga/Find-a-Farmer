@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
           card.appendChild(image);
   
           const title = document.createElement('h3');
-          title.textContent = product.productname;
+          title.textContent = `Name: ${product.productname}`;
           card.appendChild(title);
   
           const location = document.createElement('p');
@@ -23,10 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
           card.appendChild(location);
   
           const stock = document.createElement('p');
-          stock.textContent = product.itemstock;
+          stock.textContent = `Available Stock: ${product.itemstock}`;
           card.appendChild(stock);
+
+          const retailPrice = document.createElement('p');
+          retailPrice.textContent = `Retail Price: ${product.itemprice}`;
+          card.appendChild(retailPrice);
+
+          const wholesalePrice = document.createElement('p');
+          wholesalePrice.textContent = `Wholesale Price: ${product.wholesaleprice}`;
+          card.appendChild(wholesalePrice);
   
           const buyButton = document.createElement('button');
+          buyButton.className = 'btn' ;
           buyButton.textContent = 'Buy';
           buyButton.addEventListener('click', () => {
             // Prompt the user for the amount of stock to be purchased
@@ -44,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(response => response.json())
                 .then(updatedItem => {
                   // Update the card with the new stock information
-                  stock.textContent = `${updatedItem.itemstock}`;
+                  stock.textContent = `Available Stock: ${updatedItem.itemstock}`;
                   if (updatedItem.itemstock === 0) {
                     buyButton.textContent = 'Sold Out';
                     buyButton.disabled = true;
@@ -62,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
           });
   
           const deleteButton = document.createElement('button');
+          deleteButton.className = 'btn';
           deleteButton.textContent = 'Delete';
           deleteButton.addEventListener('click', () => {
             // Make a request to delete the product from the API
