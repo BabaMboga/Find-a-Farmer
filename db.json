@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "productid": "1",
+      "id": "1",
       "productname": "Potatoes",
       "Firstname": "Naman",
       "Secondname": "Balalu",
@@ -13,7 +13,7 @@
       "wholesaleprice": "400"
     },
     {
-      "productid": "2",
+      "id": "2",
       "productname": "Chicks",
       "Firstname": "Marion",
       "Secondname": "Ndambuki",
@@ -25,7 +25,7 @@
       "wholesaleprice": "600"
     },
     {
-      "productid": "3",
+      "id": "3",
       "productname": "sukumawiki",
       "Firstname": "Patricia",
       "Secondname": "Ngele",
@@ -37,7 +37,7 @@
       "wholesaleprice": "100"
     },
     {
-      "productid": "4",
+      "id": "4",
       "productname": "strawberry",
       "Firstname": "Edson",
       "Secondname": "Joshua",
@@ -49,7 +49,7 @@
       "wholesaleprice": "5"
     },
     {
-      "productid": "5",
+      "id": "5",
       "productname": "Pigs",
       "Firstname": "Patrick",
       "Secondname": "Lusenya",
@@ -61,7 +61,7 @@
       "wholesaleprice": "6600"
     },
     {
-      "productid": "6",
+      "id": "6",
       "productname": "avocado",
       "Firstname": "Hazel",
       "Secondname": "Museo",
@@ -73,7 +73,7 @@
       "wholesaleprice": "15"
     },
     {
-      "productid": "7",
+      "id": "7",
       "productname": "Fish",
       "Firstname": "Niasy",
       "Secondname": "Moi",
@@ -85,7 +85,7 @@
       "wholesaleprice": "200"
     },
     {
-      "productid": "8",
+      "id": "8",
       "productname": "tomatoes",
       "Firstname": "Reagan",
       "Secondname": "Lionz",
@@ -97,7 +97,7 @@
       "wholesaleprice": "5"
     },
     {
-      "productid": "9",
+      "id": "9",
       "productname": "onions",
       "Firstname": "Purity",
       "Secondname": "Musa",
@@ -109,7 +109,7 @@
       "wholesaleprice": "10"
     },
     {
-      "productid": "10",
+      "id": "10",
       "productname": "goats",
       "Firstname": "Arthur",
       "Secondname": "Avery",
@@ -121,7 +121,7 @@
       "wholesaleprice": "6000"
     },
     {
-      "productid": "11",
+      "id": "11",
       "productname": "Maize",
       "Firstname": "Thomas",
       "Secondname": "Abuga",
@@ -133,7 +133,7 @@
       "wholesaleprice": "160"
     },
     {
-      "productid": "12",
+      "id": "12",
       "productname": "Cabbages",
       "Firstname": "Natalya",
       "Secondname": "Kalonzo",
@@ -145,7 +145,7 @@
       "wholesaleprice": "20"
     },
     {
-      "productid": "13",
+      "id": "13",
       "productname": "Garlic",
       "Firstname": "Kennedy",
       "Secondname": "Asuba",
@@ -157,7 +157,7 @@
       "wholesaleprice": "15"
     },
     {
-      "productid": "14",
+      "id": "14",
       "productname": "Pilipili-hoho",
       "Firstname": "Mabela",
       "Secondname": "Kitutsi",
@@ -169,7 +169,7 @@
       "wholesaleprice": "10"
     },
     {
-      "productid": "15",
+      "id": "15",
       "productname": "Ducks",
       "Firstname": "Sansa",
       "Secondname": "Njeri",
@@ -181,7 +181,7 @@
       "wholesaleprice": "500"
     },
     {
-      "productid": "16",
+      "id": "16",
       "productname": "Water-Melons",
       "Firstname": "Margaret",
       "Secondname": "Syombua",
@@ -193,7 +193,7 @@
       "wholesaleprice": "40"
     },
     {
-      "productid": "17",
+      "id": "17",
       "productname": "apples",
       "Firstname": "Philemon",
       "Secondname": "Kusenya",
@@ -205,7 +205,7 @@
       "wholesaleprice": "20"
     },
     {
-      "productid": "18",
+      "id": "18",
       "productname": "Cassava",
       "Firstname": "Bruce",
       "Secondname": "Wayne",
@@ -217,7 +217,7 @@
       "wholesaleprice": "10"
     },
     {
-      "productid": "19",
+      "id": "19",
       "productname": "Pineapple",
       "Firstname": "Simon",
       "Secondname": "Peter",
@@ -229,7 +229,7 @@
       "wholesaleprice": "30"
     },
     {
-      "productid": "20",
+      "id": "20",
       "productname": "Cucumbers",
       "Firstname": "Jasmine",
       "Secondname": "Okumu",

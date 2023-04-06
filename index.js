@@ -29,11 +29,51 @@ document.addEventListener('DOMContentLoaded',() => {
             const buyButton = document.createElement('button');
             buyButton.textContent = 'Buy';
             buyButton.addEventListener('click', () => {
+                // Prompt the user for the amount of stock to be purchased
+                const purchasedAmount = prompt('Enter the amount of stock to be purchased:');
                 
-            })
-
-        })
+                if (purchasedAmount !== null && purchasedAmount !== '' && !isNaN(purchasedAmount) && parseInt(purchasedAmount) > 0) {
+                    const newStock = product.itemstock - purchasedAmount;
+                    //Make a request to update the API with the amount of stock purchased
+                    fetch(`http://localhost:3000/products/${product.id}`,{
+                        method: 'PATCH',
+                        body: JSON.stringify({itemstock : newStock}),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(updatedItem => {
+                        // Update the card with the new stock information
+                        stock.textContent = `${updatedItem.itemstock}`;
+                        if (updatedItem.itemstock === 0) {
+                            buyButton.textContent = 'Sold Out';
+                            buyButton.disabled = true;
+                        }
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert('Failed to update the amount of stock purchased.');
+                    });
+                    if (product.itemstock === 0) {
+                        buyButton.textContent = 'Sold Out';
+                        buyButton.disabled = true;
+                    }
+                    
+                    card.appendChild(buyButton);
+                    galleryContainer.appendChild(card);
+                }
+            });
+            if (product.itemstock === 0) {
+                buyButton.textContent = 'Sold Out';
+                buyButton.disabled = true;
+            }
+            card.appendChild(buyButton);
+            galleryContainer.appendChild(card);
+        });
     })
-
-
-})
+    .catch(error => {
+        console.error(error);
+        alert('Failed to fetch products from the API.');
+    });
+});
