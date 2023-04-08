@@ -44,7 +44,7 @@
       "productimage": "https://i.pinimg.com/564x/1f/02/6b/1f026be7d7ec72df7e78443058ff7b79.jpg",
       "productlocation": "Kitale",
       "farmerContactnumber": "0783217943",
-      "itemstock": "700",
+      "itemstock": 133,
       "itemprice": "20",
       "wholesaleprice": "15"
     },
@@ -56,7 +56,7 @@
       "productimage": "https://i.pinimg.com/564x/23/07/e3/2307e3ca12baffe4af873355b328ec4e.jpg",
       "productlocation": "Ahero",
       "farmerContactnumber": "0725204670",
-      "itemstock": "113",
+      "itemstock": -1,
       "itemprice": "8500",
       "wholesaleprice": "6600"
     },

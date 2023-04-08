@@ -102,5 +102,124 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error(error);
         alert('Failed to fetch products from the API.');
       });
-  });
+
+      const addItemsButton = document.getElementById('addItems');
+      addItemsButton.addEventListener('click', () => {
+        //promp the user to enter the details of the new item
+        const newProduct = {};
+        newProduct.productname = prompt('Enter the product name:');
+        newProduct.productimage = prompt('Enter the product image URL:');
+        newProduct.productlocation = prompt('Enter the product location:');
+        newProduct.itemstock = prompt('Enter the product stock:');
+        newProduct.Firstname = prompt("Enter the owner's First Name:");
+        newProduct.Secondname = prompt("Enter the owner's Second Name:");
+        newProduct.farmerContactnumber = prompt("Enter the owner's Contact Number:");
+        newProduct.itemprice = prompt("Enter the product's retail price:");
+        newProduct.wholesaleprice = prompt("Enter the product's wholesale price:");
+
+        if(newProduct.productname && newProduct.productimage && newProduct.productlocation && newProduct.itemstock && newProduct.Firstname && newProduct.Secondname && newProduct.farmerContactnumber && newProduct.itemprice && newProduct.wholesaleprice){
+          fetch('http://localhost:3000/products', {
+            method: 'POST',
+            body: JSON.stringify(newProduct),
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(response => response.json())
+          .then(newItem => {
+            // create a card for the new item and add it to the gallery
+            const newCard = document.createElement('div');
+            newCard.ckassKist.add('card');
+
+            const newImage = document.createElement('img');
+            newImage.src = newItem.productimage;
+            newCard.appendChild(newImage);
+
+            const newTitle = document.createElement('h3');
+            newTitle.textContent = newItem.productname;
+            newCard.appendChild(newTitle);
+
+            const newLocation = document.createElement('p');
+            newLocation.textContent = newItem.productlocation;
+            card.appendChild(newLocation);
+  
+            const newStock = document.createElement('p');
+            newStock.textContent = `Available Stock: ${newItem.itemstock}`;
+            card.appendChild(newStock);
+
+            const newRetailPrice = document.createElement('p');
+            newRetailPrice.textContent = `Retail Price: ${newItem.itemprice}`;
+            card.appendChild(newRetailPrice);
+
+            const newWholesalePrice = document.createElement('p');
+            newWholesalePrice.textContent = `Wholesale Price: ${newItem.wholesaleprice}`;
+            card.appendChild(newWholesalePrice);
+  
+            const newBuyButton = document.createElement('button');
+            newBuyButton.className = 'btn' ;
+            newBuyButton.textContent = 'Buy';
+            newBuyButton.addEventListener('click', () => {
+              //prompt the user for the amount of stock to be purchsded 
+              const purchasedAmount = prompt ('Enter the emount of stock to be purchased:');
+
+              if (purchasedAmount !== null && purchasedAmount !== '' && !isNaN(purchasedAmount) && parseInt(purchasedAmount) > 0) {
+                const newStockAmount = newItem.itemstock -  purchasedAmount;
+                //Make a request to update the API with the amount of stock purchased
+                fetch(`http://localhost:3000/products/${newItem.id}`,{
+                  method: 'PATCH',
+                  body: JSON.stringify({itemstock : newStockAmount}),
+                  headers: {
+                    'Content-Type' : 'application/json'
+                  }
+                })
+                .then(response => response.json())
+                .then(updatedItem => {
+                  //Update the card with the new stock infomation
+                  newStock.textContent = `${updatedItem.itemstock}`;
+                  if(updatedItem.itemstock === 0 ) {
+                    newBuyButton.textContent = 'Sold Out';
+                    newBuyButton.disabled = true;
+                  }
+                })
+                .catch(error => {
+                  console.error(error);
+                  alert('Failed to update the amount of stock purchased.');
+                });
+                if(newItem.itemstock === 0){
+                  newBuyButton.textContent = 'Sold Out';
+                  newBuyButton.disabled = true;
+                }
+              }
+            });
+            newCard.appendChild(newBuyButton);
+
+            const newDeleteButton = document.createElement('button');
+            newDeleteButton.textContent = 'Delete';
+            newDeleteButton.addEventListener('click', () => {
+              // Make a request to delete the item from the API
+              fetch(`http://localhost:3000/products/${newItem.id}`,{
+                method: 'DELETE'
+              })
+              .then(() => {
+                //remove the card from the gallery
+                newCard.remove();
+              })
+              .catch(error => {
+                console.error(error);
+                alert('Failed to delete the item.')
+              });
+            });
+            newCard.appendChild(newDeleteButton);
+
+            galleryContainer.appendChild(newCard);
+          })
+          .catch(error => {
+            console.error(error);
+            alert('Failed to add the item to the API.');
+          });
+        } else {
+          alert('Please enter all details to add a new item.');
+        }
+      });
+});
   
