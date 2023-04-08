@@ -1,194 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIND A FARMER</title>
-    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" 
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-</head>
-       <body>
-        <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <!-- <a href="index.html"><img src="logo-1011.jpg" width="160px"></a> -->
-                    </div>
-                    <div class = "login-container">
-                        <form id="loginForm">
-                            <input type="email" placeholder="Email" name="Email" required>
-                            <input type="password" placeholder="Password" name="psw" required>
-                            <button type="submit">Login</button>
-                        </form>
-                    </div>
-                    <nav>                                              
-                        <ul id="menuItems">                            
-                            <li><a href="#products">Products</a></li>
-			                <li><a href="#contact_us">Contact Us</a></li>
-                            <li><a href="#about_us">About Us</a></li>
-                        </ul>
-                    </nav>
-                    <a href=""><img src="./assets/images/shopping-cart.png" width="30px" height="30px"></a>
-                    <img src="./assets/images/menu-rounded.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <h1>Welcome To Find A Farmer<br>You Need It, We've Got it</h1>
-                        <p>We are here to esnure that farmers can get their products across a larger market<br>
-                            And in turn they are able to get what they are owed for their hardwork<br> 
-                            And the clients can get healthy quality organic products at affordable prices</p>
-                            <a href="#products" class="btn">Explore Now &#8594;</a>
-                    </div>
-                    <div class="col-2">
-                        <img src="./assets/images/happy-farmer-front-cover.png">
-                    </div>
-                </div>
-            </div>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <!-- <a href="index.html"><img src="logo-1011.jpg" width="160px"></a> -->
+          </div>
+          <div class="login-container">
+            <form id="loginForm">
+              <input type="email" placeholder="Email" name="Email" required />
+              <input
+                type="password"
+                placeholder="Password"
+                name="psw"
+                required
+              />
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact_us">Contact Us</a></li>
+              <li><a href="#about_us">About Us</a></li>
+            </ul>
+          </nav>
+          <a href=""
+            ><img
+              src="./assets/images/shopping-cart.png"
+              width="30px"
+              height="30px"
+          /></a>
+          <img
+            src="./assets/images/menu-rounded.png"
+            width="30px"
+            height="30px"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
         </div>
-
-        <!---------------Categories--------------->
-
-        <div class="categories">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-3">
-                        <h4>PLANTS & CEREEALS</h4>
-                        <img src="./assets/images/category-01.jpg">
-                    </div>
-                    <div class="col-3">
-                        <h4>ANIMALS & ANIMAL PRODCUTS</h4>
-                        <img src="./assets/images/category-2.jpg">
-                    </div>
-                    <div class="col-3">
-                        <h4>AGRICULTURAL INFORMATION & TIPS</h4>
-                        <img src="./assets/images/category-3.jpg">
-                    </div>
-                </div>
-            </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Welcome To Find A Farmer<br />You Need It, We've Got it</h1>
+            <p>
+              We are here to esnure that farmers can get their products across a
+              larger market<br />
+              And in turn they are able to get what they are owed for their
+              hardwork<br />
+              And the clients can get healthy quality organic products at
+              affordable prices
+            </p>
+            <a href="#products" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/happy-farmer-front-cover.png" />
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!---------------Featured Products--------------->
+    <!---------------Categories--------------->
 
-        <div id="products">
-            <h2 class="title">Featured Products</h2>
-            <div class= "card-container">
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <h4>PLANTS & CEREEALS</h4>
+            <img src="./assets/images/category-01.jpg" />
+          </div>
+          <div class="col-3">
+            <h4>ANIMALS & ANIMAL PRODCUTS</h4>
+            <img src="./assets/images/category-2.jpg" />
+          </div>
+          <div class="col-3">
+            <h4>AGRICULTURAL INFORMATION & TIPS</h4>
+            <img src="./assets/images/category-3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-            </div>
-            <div class ="btnContainer">
-                <div class ="center">
-            <button id="addItems" class="btn" style="text-align: center;">Add Item</button>
-                </div>
-            </div>
-            
-        </div>   
+    <!---------------Featured Products--------------->
+
+    <div id="products">
+      <h2 class="title">Featured Products</h2>
+      <div class="card-container"></div>
+      <div class="btnContainer">
+        <div class="center">
+          <button id="addItems" class="btn" style="text-align: center">
+            Add Item
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-----offer----->
 
-        <div class="offer">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="./assets/images/insurance.jpg" class="offer-img">
-                    </div>
-                    <div class="col-2">
-                        <p>Exclusively available on Find a Farmer</p>
-                        <h1>Multi-Layered Insurance</h1>
-                        <small>Our Multi-Layered insurance cover is provided by
-                            our sponsors and it takes care of our farmers full needs
-                            with adjustable scope that to ensure our farmers are able to
-                            work on their products stress free<br></small>
-                            <a href="" class="btn">Buy Now &#8594;</a>
-                    </div>
-                </div>
-            </div>
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./assets/images/insurance.jpg" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Exclusively available on Find a Farmer</p>
+            <h1>Multi-Layered Insurance</h1>
+            <small
+              >Our Multi-Layered insurance cover is provided by our sponsors and
+              it takes care of our farmers full needs with adjustable scope that
+              to ensure our farmers are able to work on their products stress
+              free<br
+            /></small>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
         </div>
-        <!----------About us---------->
-        <div id="about_us">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-5">
-                        <h2>We are organic</h2>
-                        <p>We strive in ensuring our farmers are well adversed in the production of organic foods by ensuring they are up to date on the latest techniques and weather patterns. We ensure what you eat is safe for your body. </p>
-
-                    </div>
-                    <div class="col-5">
-                            <h2>We are trustworthy</h2>
-                            <p>All our farmers are vetted through a rigorous process to ensure they fit the criteria to join and enjoy our services. The customers are also thoroughly vetted to ensure that our farmers get what they are owed and in due time.</p>
-
-                    </div>
-                    <div class="col-5">
-                            <h2>We are you</h2>
-                            <p>We here at find a farmer ensure that our clients needs are always met ensuring high quality in all our services. We also pride ourselves on a high satisfaction rate all over the world</p>
-                    </div>
-                               
-                 </div>
-            </div>
-         </div>
-    <!--------------------footer----------------------->                            
-      <div id="contact_us">
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col-1">
-                        <h3>App coming soon...</h3>
-                        <p>Android and Iphone app coming soon</p>
-                        <div class="app-logo">
-                            <img src="./assets/images/hand-with-smartphone.png">
-                            
-                        </div>
-                    </div>
-                    <div class="footer-col-2">
-                        <img src="./assets/images/logo.png">
-                        <p>Get notifications when we launch new products</p>
-                    </div>
-                    <div class="footer-col-3">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li>Refer a friend</li>
-                            <li>Blog Post</li>
-                            <li>Return Policy</li>
-                            <li>Loyalty program</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col-4">
-                        <h3>Follow us on our socials</h3>
-                            <div>
-                            <img src="./assets/images/google-logo.png">
-                            <img src="./assets/images/youtube-play.png" >
-                            <img src="./assets/images/instagram-new.png" >
-                            <img src="./assets/images/facebook-new.png" >
-                            </div>
-                    </div>
-                </div>
-                <hr>
-                <p class="copyright">Copyright 2023 - Powered by BabaMboga</p>
-            </div>
+      </div>
+    </div>
+    <!----------About us---------->
+    <div id="about_us">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <h2>We are organic</h2>
+            <p>
+              We strive in ensuring our farmers are well adversed in the
+              production of organic foods by ensuring they are up to date on the
+              latest techniques and weather patterns. We ensure what you eat is
+              safe for your body.
+            </p>
+          </div>
+          <div class="col-5">
+            <h2>We are trustworthy</h2>
+            <p>
+              All our farmers are vetted through a rigorous process to ensure
+              they fit the criteria to join and enjoy our services. The
+              customers are also thoroughly vetted to ensure that our farmers
+              get what they are owed and in due time.
+            </p>
+          </div>
+          <div class="col-5">
+            <h2>We are you</h2>
+            <p>
+              We here at find a farmer ensure that our clients needs are always
+              met ensuring high quality in all our services. We also pride
+              ourselves on a high satisfaction rate all over the world
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
+    <!--------------------footer----------------------->
+    <div id="contact_us">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>App coming soon...</h3>
+              <p>Android and Iphone app coming soon</p>
+              <div class="app-logo">
+                <img src="./assets/images/hand-with-smartphone.png" />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="./assets/images/logo.png" />
+              <p>Get notifications when we launch new products</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Refer a friend</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Loyalty program</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us on our socials</h3>
+              <div>
+                <img src="./assets/images/google-logo.png" />
+                <img src="./assets/images/youtube-play.png" />
+                <img src="./assets/images/instagram-new.png" />
+                <img src="./assets/images/facebook-new.png" />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2023 - Powered by BabaMboga</p>
         </div>
-        
+      </div>
+    </div>
 
-<!---------------js for menu toggle--------------->
+    <!---------------js for menu toggle--------------->
 
-<script>
-    var menuItems = document.getElementById("menuItems");
+    <script>
+      var menuItems = document.getElementById("menuItems");
 
-    menuItems.style.maxHeight = "0px";
+      menuItems.style.maxHeight = "0px";
 
-    function menutoggle() {
-        if (menuItems.style.maxHeight == "0px")
-        {
-            menuItems.style.maxHeight == "200px";
+      function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight == "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
         }
-        else 
-        {
-            menuItems.style.maxHeight = "0px";
-        }
-    }
-</script>
-<script src="https://kit.fontawesome.com/21d24d62ff.js" crossorigin="anonymous"></script>
-<script src="./assets/js/index.js"></script>
-</body>
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/21d24d62ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
