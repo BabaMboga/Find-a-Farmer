@@ -16,6 +16,10 @@ This is a single paged platform that allows users to buy and sell different agri
 
 Use the link provided to navigate to the Find A Farmer website on https://babamboga.github.io/Find-a-Farmer/ 
 
+This is the landing page 
+
+image.png
+
 
 
 ## Setup/Installation Requirements IF yu need to contribute to the project
