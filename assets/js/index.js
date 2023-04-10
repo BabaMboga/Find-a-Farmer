@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+ });
+ 
   document.getElementById("loginForm").reset();
   const galleryContainer = document.querySelector(".card-container");
 
