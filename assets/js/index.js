@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleryContainer = document.querySelector(".card-container");
 
   // Make a request to the API
-  fetch("http://localhost:3000/products")
+  fetch("db.json")
     .then((response) => response.json())
     .then((products) => {
       // Loop through the data and create a card for each item
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ) {
             const newStock = product.itemstock - purchasedAmount;
             // Make a request to update the API with the amount of stock purchased
-            fetch(`http://localhost:3000/products/${product.id}`, {
+            fetch(`db.json/${product.id}`, {
               method: "PATCH",
               body: JSON.stringify({ itemstock: newStock }),
               headers: {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         deleteButton.textContent = "Delete";
         deleteButton.addEventListener("click", () => {
           // Make a request to delete the product from the API
-          fetch(`http://localhost:3000/products/${product.id}`, {
+          fetch(`db.json/${product.id}`, {
             method: "DELETE",
           })
             .then((response) => {
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       newProduct.itemprice &&
       newProduct.wholesaleprice
     ) {
-      fetch("http://localhost:3000/products", {
+      fetch("db.json", {
         method: "POST",
         body: JSON.stringify(newProduct),
         headers: {
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ) {
               const newStockAmount = newItem.itemstock - purchasedAmount;
               //Make a request to update the API with the amount of stock purchased
-              fetch(`http://localhost:3000/products/${newItem.id}`, {
+              fetch(`db.json/${newItem.id}`, {
                 method: "PATCH",
                 body: JSON.stringify({ itemstock: newStockAmount }),
                 headers: {
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
           newDeleteButton.textContent = "Delete";
           newDeleteButton.addEventListener("click", () => {
             // Make a request to delete the item from the API
-            fetch(`http://localhost:3000/products/${newItem.id}`, {
+            fetch(`db.json/${newItem.id}`, {
               method: "DELETE",
             })
               .then(() => {
@@ -247,3 +247,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+add

@@ -14,7 +14,7 @@ This is a single paged platform that allows users to buy and sell different agri
 
 ## Demo
 
-Use the link provided to navigate to the Find A Farmer website
+Use the link provided to navigate to the Find A Farmer website https://clever-sunflower-d18b57.netlify.app/
 
 The page appears as shown below
 

@@ -56,7 +56,7 @@
       "productimage": "https://i.pinimg.com/564x/23/07/e3/2307e3ca12baffe4af873355b328ec4e.jpg",
       "productlocation": "Ahero",
       "farmerContactnumber": "0725204670",
-      "itemstock": -1,
+      "itemstock": "2300",
       "itemprice": "8500",
       "wholesaleprice": "6600"
     },
@@ -92,7 +92,7 @@
       "productimage": "https://i.pinimg.com/564x/17/a2/de/17a2de80b768ca63bd33edce0d6d789a.jpg",
       "productlocation": "Athi-river",
       "farmerContactnumber": "0780032143",
-      "itemstock": "10000",
+      "itemstock": 9800,
       "itemprice": "10",
       "wholesaleprice": "5"
     },
