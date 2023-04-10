@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
- 
   document.getElementById("loginForm").reset();
   const galleryContainer = document.querySelector(".card-container");
 
@@ -52,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ) {
             const newStock = product.itemstock - purchasedAmount;
             // Make a request to update the API with the amount of stock purchased
-            fetch(` https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga/${product.id}`, {
+            fetch(`https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga/${product.id}`, {
               method: "PATCH",
               body: JSON.stringify({ itemstock: newStock }),
               headers: {
