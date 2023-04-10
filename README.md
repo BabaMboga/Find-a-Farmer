@@ -14,11 +14,9 @@ This is a single paged platform that allows users to buy and sell different agri
 
 ## Demo
 
-Use the link provided to navigate to the Find A Farmer website on https://babamboga.github.io/Find-a-Farmer/ or https://clever-sunflower-d18b57.netlify.app/
+Use the link provided to navigate to the Find A Farmer website on https://babamboga.github.io/Find-a-Farmer/ 
 
-The page appears as shown below
 
-This is the landing page
 
 ## Setup/Installation Requirements IF yu need to contribute to the project
 
