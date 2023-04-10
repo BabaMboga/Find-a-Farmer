@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleryContainer = document.querySelector(".card-container");
 
   // Make a request to the API
-  fetch("  https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga  ")
+  fetch("https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/")
     .then((response) => response.json())
     .then((products) => {
       // Loop through the data and create a card for each item
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       newProduct.itemprice &&
       newProduct.wholesaleprice
     ) {
-      fetch("https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga", {
+      fetch("https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/", {
         method: "POST",
         body: JSON.stringify(newProduct),
         headers: {
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ) {
               const newStockAmount = newItem.itemstock - purchasedAmount;
               //Make a request to update the API with the amount of stock purchased
-              fetch(` https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga/${newItem.id}`, {
+              fetch(` https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/${newItem.id}`, {
                 method: "PATCH",
                 body: JSON.stringify({ itemstock: newStockAmount }),
                 headers: {
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
           newDeleteButton.textContent = "Delete";
           newDeleteButton.addEventListener("click", () => {
             // Make a request to delete the item from the API
-            fetch(` https://my-json-server.typicode.com/Find-a-Farmer/BabaMboga/${newItem.id}`, {
+            fetch(` https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/${newItem.id}`, {
               method: "DELETE",
             })
               .then(() => {
