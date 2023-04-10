@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ) {
             const newStock = product.itemstock - purchasedAmount;
             // Make a request to update the API with the amount of stock purchased
-            fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/products/${product.id}`, {
+            fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/db/${product.id}`, {
               method: "PATCH",
               body: JSON.stringify({ itemstock: newStock }),
               headers: {
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       newProduct.itemprice &&
       newProduct.wholesaleprice
     ) {
-      fetch("https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/products", {
+      fetch("https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/db", {
         method: "POST",
         body: JSON.stringify(newProduct),
         headers: {
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ) {
               const newStockAmount = newItem.itemstock - purchasedAmount;
               //Make a request to update the API with the amount of stock purchased
-              fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/products/${newItem.id}`, {
+              fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/db/${newItem.id}`, {
                 method: "PATCH",
                 body: JSON.stringify({ itemstock: newStockAmount }),
                 headers: {
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
           newDeleteButton.textContent = "Delete";
           newDeleteButton.addEventListener("click", () => {
             // Make a request to delete the item from the API
-            fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/products/${newItem.id}`, {
+            fetch(`https://my-json-server.typicode.com/BabaMboga/Find-a-Farmer/db/${newItem.id}`, {
               method: "DELETE",
             })
               .then(() => {
