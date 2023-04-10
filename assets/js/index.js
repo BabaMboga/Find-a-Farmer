@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleryContainer = document.querySelector(".card-container");
 
   // Make a request to the API
-  fetch("https://babamboga.github.io/Find-a-Farmer/db.json")
+  fetch("db.json")
     .then((response) => response.json())
     .then((products) => {
       // Loop through the data and create a card for each item
