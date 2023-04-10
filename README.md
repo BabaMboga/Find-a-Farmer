@@ -18,7 +18,7 @@ Use the link provided to navigate to the Find A Farmer website on https://babamb
 
 This is the landing page 
 
-image.png
+pasteImage.C:\Users\odhis\OneDrive\Pictures\Screenshots
 
 
 
