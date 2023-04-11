@@ -20,6 +20,10 @@ This is the Landing Page
 
 ![My Image](/assets/images/Screenshot-2023-04-10.png)
 
+This is the featured products fetched from the API
+
+![My Image](/assets/images/Screenshot-2.png)
+
 
 ## Setup/Installation Requirements IF yu need to contribute to the project
 
