@@ -498,6 +498,7 @@ form a {
 .navbar .login-container {
   float: right;
 }
+
 .navbar input[type="email"] {
   padding: 6px;
   margin-top: 8px;
@@ -514,14 +515,15 @@ form a {
 }
 .navbar .login-container button {
   float: right;
-  padding: 6px;
-  margin-top: 8px;
+  padding: 10px 20px;
+  margin-top: 4px;
   margin-right: 16px;
   background: #ff523b;
   font-size: 17px;
   border: none;
   cursor: pointer;
   border-radius: 30px;
+  margin-left: 16px
 }
 
 .navbar .login-container button:hover {
